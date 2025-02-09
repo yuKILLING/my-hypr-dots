@@ -1,0 +1,53 @@
+window {
+  font-family: "JetBrains Mono", "Font Awesome 5 Free";
+  margin: 0px;
+  background-color: #000000;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+#input {
+  margin: 5px;
+  border: none;
+  color: #f8f8f2;
+  background-color: transparent;
+}
+
+#inner-box {
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+#outer-box {
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+#scroll {
+  margin: 0px;
+  border: none;
+}
+
+#text {
+  margin: 5px;
+  border: none;
+  color: #c5c8c6;
+}
+
+#entry {
+  border: transparent;
+}
+
+#entry:focus {
+  border: none;
+}
+
+#entry:selected {
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+}
+
