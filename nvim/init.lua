@@ -991,13 +991,17 @@ vim.wo.relativenumber = true
 vim.opt.fillchars = { eob = ' ' }
 vim.cmd 'hi Normal ctermbg=NONE guibg=NONE'
 vim.cmd 'hi NonText ctermbg=NONE guibg=NONE'
+vim.opt.guifont = 'JetBrains Mono'
+
+-- TOGGLETERM
+-- vim.keymap.set('n', '<space>td', ':ToggleTerm dir=%:p:h<CR>')
 
 -- NVIM TREE WEB ICONS
 require('nvim-web-devicons').setup {
   default = true,
 }
 
--- LUALINE THEME
+-- LUALINE
 local monochrome_theme = {
   normal = {
     a = { bg = '#000000', fg = '#ffffff', gui = 'bold' },
@@ -1033,6 +1037,7 @@ local monochrome_theme = {
 
 require('lualine').setup {
   options = {
+    disabled_filetypes = { 'packer', 'NvimTree', 'Alpha' },
     theme = monochrome_theme,
     icons_enabled = false,
     component_separators = { left = '', right = '' },
